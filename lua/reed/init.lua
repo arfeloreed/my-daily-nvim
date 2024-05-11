@@ -21,7 +21,17 @@ require("lazy").setup({
     -- file finder
     "nvim-lua/plenary.nvim",
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-    { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
+    { 'nvim-telescope/telescope.nvim', tag = '0.1.5' },
+
+    -- for commenting
+    {
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+        },
+    lazy = false,
+    },
+    'JoosepAlviste/nvim-ts-context-commentstring',
 })
 
 print("Hello from Reed")
